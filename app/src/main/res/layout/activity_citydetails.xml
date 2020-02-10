@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:background="#4A94B3"
+    android:layout_height="match_parent"
+    tools:context=".acitivity.CitydetailsActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="25dp"
+            android:src="@drawable/fanhui"
+            android:id="@+id/imgfanhui"
+            android:layout_gravity="center"
+            android:layout_height="25dp"></ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:text="高州"
+            android:gravity="center"
+            android:id="@+id/cityname"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:layout_height="wrap_content"></TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+                <com.example.weather.custom.HorizontalListView
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/mylistview"
+                    android:layout_height="wrap_content">
+
+
+                </com.example.weather.custom.HorizontalListView>
+
+
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:text="wqeq"
+              ></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/addcity"
+
+            android:id="@+id/addcity"
+            android:layout_height="40dp"></ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="添加到主页"
+            android:layout_gravity="center"
+            android:layout_marginBottom="50dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>
